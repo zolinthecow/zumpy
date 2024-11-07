@@ -1,0 +1,17 @@
+{
+  "lsp": {
+    "pyright": {
+      "settings": {
+        "python": {
+          "pythonPath": "~/miniconda3/envs/zumpy/bin/python"
+        }
+      }
+    }
+  },
+  "languages": {
+    "YAML": {
+      "tab_size": 2
+    }
+  },
+  "tab_size": 4
+}

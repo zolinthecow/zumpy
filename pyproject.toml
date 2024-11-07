@@ -1,0 +1,33 @@
+[build-system]
+requires = ["meson-python", "ninja", "wheel", "setuptools>=42"]
+build-backend = "mesonpy"
+
+[project]
+name = "zumpy"
+version = "0.0.1.alpha0"
+description = "zolinthecow's toy numpy clone"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    { name = "Colin Zhao", email = "colinzhao777@gmail.com" }
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+dev = [
+    "black>=23.0.0",
+    "mypy>=1.0.0",
+    "ruff>=0.0",
+]
+
+[tool.ruff]
+select = ["E", "F", "I"]
+line-length = 88
+
+[tool.setuptools]
+packages = ["zumpy"]
